@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WVA Proxy Example</title>
+</head>
+<body>
+<div id="ibm_chat_root" style="height:400px"></div>
+<script src='https://unpkg.com/@watson-virtual-agent/chat-widget@1.2.18/dist/chat.min.js'></script>
+<script>
+    IBMChat.init({
+        el: 'ibm_chat_root',
+        botID: 'YOUR_BOT_ID',
+        baseURL: 'https://YOUR_APP_NAME.mybluemix.net/wva/',
+        styles: {
+            background: 'rgba(255, 255, 255, .99)',
+            text: 'rgba(0, 0, 0, 1)',
+            accentBackground: '#31eaf1',
+            accentText: '#ffffff',
+            secondaryBackground: '#f7f7f7',
+            secondaryText: '#464646',
+            link: '#464646'
+        }
+    });
+</script>
+</body>
+</html>
